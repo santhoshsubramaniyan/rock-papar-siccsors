@@ -1,0 +1,116 @@
+/* select a font */
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600;700;800;900&family=Roboto:wght@400;500;700;900&display=swap');
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
+:root {
+  --clr-sky-blue: #8ecae6ff;
+  --clr-blue-green: #219ebcff;
+  --clr-prussian-blue: #023047ff;
+  --clr-selective-yellow: #ffb703ff;
+  --clr-ut-orange: #fb8500ff;
+  --ff-roboto: 'Roboto', sans-serif;
+  --ff-noto-sans: 'Noto Sans', sans-serif;
+  --transition: all 0.3s linear;
+  --spacing: 0.1rem;
+  --radius: 0.25rem;
+  --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+  --max-width: 1170px;
+  --fixed-width: 450px;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: var(--ff-roboto);
+}
+
+
+body {
+  width: 100%;
+  background-color: #85ffbd;
+  background-image: url(../images/photo-1520262389826-d559a9aca921.avif);
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  width: 25rem;
+  margin: 0 auto;
+  background-color: var(--clr-sky-blue);
+  min-height: 10rem;
+  padding: 2rem;
+  border-radius: 10px;
+}
+
+.info-container,
+.weapons-container {
+  min-height: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  font-weight: 900;
+  font-size: 1.25rem;
+  text-transform: uppercase;
+  gap: 0.35rem;
+}
+
+.score-container {
+  font-size: 1.15rem;
+  font-weight: 500;
+}
+
+.score-container span {
+  font-weight: 900;
+}
+
+.btn-weapons {
+  width: 5rem;
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+  background-color: #85ffbd;
+  border: 6px solid var(--clr-selective-yellow);
+  border-radius: 50%;
+  color: var(--clr-prussian-blue);
+  cursor: pointer;
+  transition: all 0.5s ease-out;
+}
+
+.btn-weapons:hover {
+  transform: scale(1.05) translateY(-5px);
+}
+
+.result-container {
+  min-height: 3rem;
+  text-align: center;
+  font-size: 1.35rem;
+  font-weight: 600;
+}
+
+.result-container p {
+  margin-bottom: 0.5rem;
+}
